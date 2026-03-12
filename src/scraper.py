@@ -12,7 +12,7 @@ api_hash = os.getenv("apihash")
 telegram_bot_token = os.getenv("TELEGRAM_BOT_TOKEN")
 
 #Client Obj
-client = TelegramClient("Client1", api_hash=api_hash, api_id=api_id)
+client = TelegramClient("Client2", api_hash=api_hash, api_id=api_id)
 
 #with basically connects and disconencts
 async def scrape(channel, lim):
