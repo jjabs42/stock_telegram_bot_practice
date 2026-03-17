@@ -70,7 +70,7 @@ async def main():
     x = await scrape(channel1, lim=200, Indicator="$" )
     print(x)
         
-    
+    #test
 
 
 if __name__ == "__main__":
