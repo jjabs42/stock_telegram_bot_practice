@@ -8,7 +8,7 @@ from pathlib import Path
 #sets this var to the home dir
 path_to_home_dir = Path(__file__).parent.parent
 
-async def send_message(message):
+def send_message(message):
     #loads all the necessary env vars
     load_dotenv(path_to_home_dir/'.env')
     key = os.getenv("TELEGRAM_BOT_TOKEN")
@@ -24,4 +24,4 @@ async def send_message(message):
 
 
 if __name__ == "__main__":
-    send_message()
+    send_message("Message")
