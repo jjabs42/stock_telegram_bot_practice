@@ -1,9 +1,3 @@
-from stock_algo import get_stock
-import asyncio
-import yahooquery as yf
-import time
-
-
 x = [
     "AAPL", "MSFT", "GOOGL", "AMZN", "NVDA", "META", "TSLA", "BRK.B", "UNH", "LLY",
     "JPM", "V", "MA", "AVGO", "HD", "PG", "COST", "ORCL", "ABBV", "ADBE",
@@ -17,19 +11,12 @@ x = [
     "EOG", "BSX", "VLO", "CVS", "FI", "BDX", "PANW", "SNPS", "KLAC", "TGT"
 ]
 
-y = True
-for i in x:
-    if y == True:
-        string = i
-        y = False
-        continue
-    string += f" {i}"
-        
 
-obj = yf.Ticker(string, asynchronous=True)
-print(obj.financial_data["TSLA"])
+def transform(list_):
+    return " ".join(list_)
     
 
 
 
-
+if __name__ == "__main__":
+    transform()
